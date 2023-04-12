@@ -11,7 +11,7 @@ html {
   height: 100px;
   display: flex;
   justify-content: space-around;
-  background-color: #779ECB;
+  background-color: rgba(136,219,2530, 1);
   align-items: center;
   position: fixed;
   width: 100%;
@@ -69,7 +69,7 @@ main {
 
 main h1 {
   font-size: 80px;
-  color: #779ECB;
+  color: rgba(136,219,2530, 1);
   font-family: 'Staatliches', cursive;
   margin-bottom: 0.6em;
 }
@@ -81,7 +81,7 @@ main img {
 
 main button {
   background-color: transparent;
-  border: 2px solid #779ECB;
+  border: 2px solid #88DBFD;
   height: 60px;
   width: 120px;
   border-radius: 10px;
@@ -92,7 +92,7 @@ main button {
 }
 
 main button:hover {
-  background-color: #779ECB;
+  background-color: #88DBFD;
   transition: 1s;
   cursor: pointer;
 }
@@ -141,7 +141,7 @@ main button:hover {
   background-position: 50%;
   border-radius: 50%;
   background-size: 100% auto;
-  border: 3px solid #779ECB;
+  border: 3px solid #88DBFD;
   margin-bottom: 0.6em;
 }
 

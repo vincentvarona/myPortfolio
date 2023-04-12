@@ -9,7 +9,8 @@ window.onscroll = function() {
   
   if (prevScrollPos > currentScrollPos) {
     document.querySelector('.header').classList.remove('hidden');
-  } else {
+  } 
+  else {
     document.querySelector('.header').classList.add('hidden');
   }
   
