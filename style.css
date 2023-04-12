@@ -1,0 +1,416 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #779ECB;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: whitesmoke;
+  transition: transform 0.5s ease-in-out;
+  z-index: 100;
+}
+
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.header h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+}
+
+.header ul,
+.header ul li,
+.header ul li a,
+#skills ul,
+#skills ul li {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Righteous', cursive;
+  color: white;
+}
+
+.header ul li {
+  padding: 0px 25px 0px 0px;
+}
+
+main {
+  background-image: url(img/pc.jpg);
+  width: 100%;
+  height: 770px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 4px solid #779ecb;
+}
+
+main h1 {
+  font-size: 80px;
+  color: #779ECB;
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 0.6em;
+}
+
+main img {
+  width: 80px;
+  height: 80px;
+}
+
+main button {
+  background-color: transparent;
+  border: 2px solid #779ECB;
+  height: 60px;
+  width: 120px;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+main button:hover {
+  background-color: #779ECB;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#about-me {
+  width: 100%;
+  height: 770px;
+  background-image: url(img/pc-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 4px solid #779ecb;
+}
+
+#about-me h1,
+#skills h1,
+#projects h1 {
+  color: white;
+  font-size: 90px;
+}
+
+#about-me p {
+  color: white;
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  background-color: #779ECB;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 0.6em;
+}
+
+#about-me button {
+  margin-top: 1.2em;
+}
+
+#circulo {
+
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  border: 3px solid #779ECB;
+  margin-bottom: 0.6em;
+}
+
+#skills {
+  width: 100%;
+  height: 770px;
+  background-image: url(img/pc-3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 4px solid #779ecb;
+}
+
+#skills .cuadros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills .cuadro {
+  width: 300px;
+  height: 420px;
+  margin: 0em 1.8em 1.8em 0em;
+  background-color: rgba(119, 158, 203, 0.9);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skills .cuadro:hover {
+
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+#skills .cuadro ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills .cuadro ul li {
+  font-size: 25px;
+  font-family: 'Staatliches', cursive;
+}
+
+#skills h2 {
+  font-size: 40px;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 0.6em;
+  color: white;
+  margin-top: 1.8em;
+}
+
+article {
+  background-image: url(img/pc-last.jpg);
+  width: 100%;
+  height: 1050px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 80px;
+  margin-bottom: 1em;
+  color: #779ECB;
+}
+
+.portfolio {
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.portfolio h3,
+.portfolio p {
+  color: white;
+}
+
+.portfolio ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.portfolio li {
+  background-color: rgba(119, 158, 203, 1);
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+}
+
+.portfolio li:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.portfolio p {
+  margin-bottom: 0;
+}
+
+.portfolio img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+footer {
+
+  background-color: #779ecb;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social a {
+  color: white;
+  margin: 0em 0.6em;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+}
+
+.header .menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header .menu {
+    display: none;
+    flex-direction: row;
+  }
+
+  .header .menu-toggle {
+    display: block;
+    font-size: 40px;
+  }
+
+  .header .menu-toggle {
+    cursor: pointer;
+  }
+
+  .header h1 {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle.active~.menu {
+    display: flex;
+    flex-direction: row;
+    animation: fadeInDown 1s;
+  }
+
+
+  main h1 {
+    font-size: 35px;
+  }
+
+  main button {
+    height: 50px;
+    width: 120px;
+  }
+
+  #about-me {
+    height: 1000px;
+  }
+
+  #skills .cuadros {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #skills .cuadro {
+    width: 15.6em;
+    height: 420px;
+    margin: 0em 0em 1.8em 0em;
+    background-color: rgba(119, 158, 203, 0.9);
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #skills h2 {
+    font-size: 30px;
+  }
+
+  #skills {
+    height: 1800px;
+  }
+
+  #skills h1 {
+    font-size: 80px;
+  }
+
+  #projects h1 {
+    font-size: 40px;
+  }
+
+  #projects li {
+    height: 300px;
+    width: 14.5em;
+  }
+
+  .portfolio li {
+    width: 18.7em;
+  }
+
+  #projects {
+    height: 900px;
+  }
+
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
