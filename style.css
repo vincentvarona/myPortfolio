@@ -23,6 +23,10 @@ html {
 }
 
 
+#projects {
+  height: 1500px;
+}
+
 .header.hidden {
   transform: translateY(-100%);
 }
@@ -387,7 +391,7 @@ footer {
   }
 
   #projects {
-    height: 900px;
+    height: 1200px;
   }
 
 
